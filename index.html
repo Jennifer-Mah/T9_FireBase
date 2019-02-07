@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Firebase Workshop</title>
+	<!-- CSS -->
+	<link rel= "stylesheet" href="CSS/main.css">
+	<!-- Viewport -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Tab Icon -->
+	<link rel="icon" href="img/JM.png">
+</head>
+<body>
+	
+<div id="main">
+	<img id = "logo" src="img/logo.png" alt="Pac-12">
+
+
+	<div id="user_authenticate">
+		<span id="user_status"> </span>
+		<button type="button" id="signin">Sign In</button>
+		<button type="button" id="signout">Sign Out</button>
+		
+	</div>
+
+	
+	<form>
+	<p>What you like to purchase?
+
+		
+	</p>
+
+	<p>Please select an order pick up location
+		
+	</p>
+	<div class="payment">
+		<fieldset>
+			<legend>Billing Information</legend>
+			<div>
+				<label for="name" class="label">Name</label>
+				<input name="name" type="text" id="name" size="36">
+			</div>
+			<div>
+				<label for="email" class="label">Email</label>
+				<input name="email" id="email" type="email" size="36">
+			</div>
+			<div>
+				<label for="address" class="label">Address</label>
+				<input name="address" type="text" id="address" size="36">
+			</div>
+			<div>
+				<label for="city" class="label">City</label>
+				<input name="city" type="text" id="city" size="36">
+			</div>
+			<div>
+				<label for="state" class="label">State</label>
+				<input name="state" type="text" id="state" size="36">
+			</div>
+			<div>
+				<label for="zip" class="label">Postal Code</label>
+				<input name="zip" type="text" id="zip" size="36">
+			</div>
+			<div>
+				<label for="country" class="label">Country</label>
+				<input name="country" id="country" type="text" size="36">
+			</div>
+		</fieldset>
+	</div>
+	<br>
+
+	<div>
+		<fieldset>
+			<legend> Payment Method </legend>
+			<div>
+				<label for="paypal">PayPal</label>
+				<input type="radio" name="paytype" id="paypal" value="Paypal">
+				<label for="visa">Visa</label>
+				<input type="radio" name="paytype" id="visa" value="Visa">
+				<label for="mastercard">MasterCard</label>
+				<input type="radio" name="paytype" id="Mastercard" value="mastercard">
+			</div>
+			<div id="creditCard" class="payment">
+				<div>
+					<label for="cardNumber" class="label">Card Number</label>
+					<input type="text" name="cardNumber" id="cardNumber" size="36">
+				</div>
+				<div>
+					<label for="expiration" class="label">Expiration Date</label>
+					<input type="text" name="expiration" id="expiration" size="36">
+				</div>
+			</div>
+		</fieldset>
+	</div>
+	<p>
+		<button type="button" id="enter">Place Order</button>
+	</p>
+	</form>
+</div>
+
+
+
+
+
+	<!-- Firebase integration -->
+
+<script src="https://www.gstatic.com/firebasejs/5.8.2/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyDOwum-FDPDiqmWfP9RJ4GgTfjY0lwv2UE",
+    authDomain: "t-9-hacks.firebaseapp.com",
+    databaseURL: "https://t-9-hacks.firebaseio.com",
+    projectId: "t-9-hacks",
+    storageBucket: "t-9-hacks.appspot.com",
+    messagingSenderId: "376278128544"
+  };
+  firebase.initializeApp(config);
+</script>
+
+<!-- link to JS file -->
+<script src="js/script2.js"> </script>
+</body>
+</html>

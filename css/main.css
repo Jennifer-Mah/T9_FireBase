@@ -1,0 +1,93 @@
+body {
+	background-color: #e3ffff;
+	font-size:1.4em;
+	color: black;
+}
+
+h1 {
+	font-size: 1.5em;
+}
+
+h3
+{
+	font-size:1em;
+	font-weight: bold;
+}
+#logo{
+	max-width: 35%;
+}
+#user_authenticate{
+	margin-right: 5%;
+	}
+
+#user_authenticate button{
+	width: 90px;
+	}	
+	
+#user_status{
+	margin-top: 1%;
+	margin-right: 4%;
+	font-size: 0.7em;
+}
+
+#main{
+	text-align: center;
+	margin-left: auto;
+}
+
+
+.formelement {
+	margin-left: 45%;
+	text-align: left;
+}
+
+fieldset {
+	display: inline-block;
+}
+
+.payment label{
+	float: left;
+	width: 275px;
+	text-align: right;
+	padding-right: 5px;
+}
+.name_heading{
+	font-weight: bold;
+	margin-left: 2%;
+	width: 30%;
+	float: left;
+}
+
+.pickup_heading{
+	font-weight: bold;
+	margin-left: 2%;
+	width: 30%;
+	float: left;
+}
+
+
+.type_heading{
+	font-weight: bold;
+	margin-left: -5%;
+	width: 30%;
+	float: left;
+}
+
+.name{
+	width: 30%;
+	float: left;
+}
+
+.location{
+	width: 30%;
+	float: left;
+}
+
+a{
+	color: #d08b71;
+}
+
+.type{
+	width: 30%;
+	float: left;
+}

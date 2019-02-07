@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title> Orders </title>
+	<!-- CSS -->
+	<link rel= "stylesheet" href="CSS/main.css">
+	<!-- Tab Icon -->
+	<link rel="icon" href="img/JM.png">
+
+</head>
+<body>
+	<div id="main">
+	<img id = "logo" src="img/logo.png" alt="Pac-12">
+<h1> Order Pickup</h1>
+</div>
+<div id="order_main">
+<span class="name_heading">Name</span>
+
+<span class="pickup_heading">Pick Up Location </span>
+
+<span class="type_heading">Payment Type</span>
+
+<div id="orders">
+</div>
+</div>
+
+
+<!-- Firebase integration -->
+
+<script src="https://www.gstatic.com/firebasejs/5.8.2/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyDOwum-FDPDiqmWfP9RJ4GgTfjY0lwv2UE",
+    authDomain: "t-9-hacks.firebaseapp.com",
+    databaseURL: "https://t-9-hacks.firebaseio.com",
+    projectId: "t-9-hacks",
+    storageBucket: "t-9-hacks.appspot.com",
+    messagingSenderId: "376278128544"
+  };
+  firebase.initializeApp(config);
+</script>
+
+<script src="js/orders.js"></script>
+
+
+</body>
+</html>
